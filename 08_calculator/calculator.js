@@ -30,9 +30,13 @@ const multiply = function(arr) {
 
 };
 
-const power = function() {
+const power = function(num1, num2) {
+  output = num1**num2;
+  return output
 	
 };
+
+console.log(power(4,3));
 
 const factorial = function() {
 	
