@@ -36,10 +36,14 @@ const power = function(num1, num2) {
 	
 };
 
-console.log(power(4,3));
-
-const factorial = function() {
-	
+const factorial = function(num) {
+  let output = 1
+  if (num == 0 || num == 1) {
+    return output;
+  } else {
+    output = num * factorial(num-1)
+    return output;
+  }
 };
 
 // Do not edit below this line
