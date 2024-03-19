@@ -11,7 +11,7 @@ const subtract = function(num1, num2) {
 const sum = function(arr) {
   let sum = 0;
   let arrIndex = arr.length-1;
-  if (arr.length == 0) return 0
+  if (arr.length == 0) return 0;
   for (i=0; i<=arrIndex; i++) {
     sum += arr[i];
   }
@@ -19,7 +19,14 @@ const sum = function(arr) {
 	
 };
 
-const multiply = function() {
+const multiply = function(arr) {
+  if (arr.length == 0) return 0;
+  let output = 1;
+  for (i=0; i<=arr.length-1; i++) {
+    output = output*arr[i];
+  }
+  
+  return output;
 
 };
 
