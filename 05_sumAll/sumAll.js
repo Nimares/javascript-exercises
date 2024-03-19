@@ -1,24 +1,25 @@
 const sumAll = function(num1, num2) {
     //Ensures that num1 is always the smallest
-    if (errorHandler(num1, num2)) return "Error"
-    
-    let largest = num2;
-    let smallest = num1;
+    if (errorHandler(num1, num2)) return "ERROR"
+
     if (num1>num2) {
-        largest = num1;
-        smallest = num2;
+        const temp = num1;
+        num1 = num2;
+        num2 = temp;
     }
-    let remove = gauss(smallest);
-    let remainder = gauss(largest);
+
+    let remove = gauss(num1);
+    let remainder = gauss(num2);
     let output = remainder-remove+1
     return output
     
 };
 
 const errorHandler = function(num1, num2) {
-    if (num1<0 || num2 <0) return true
-    if (typeof num1 != "number"  || typeof num2 != "number" ) {
-        return true }
+    if (num1<0 || num2 <0) 
+        return true
+    if (typeof num1 != "number"  || typeof num2 != "number" ) 
+        return true
     return false
 };
 
