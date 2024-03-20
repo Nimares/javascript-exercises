@@ -17,14 +17,15 @@ console.log(leapYears(1900))
 // Do not edit below this line
 module.exports = leapYears;
 
-// Must be: Divisible by 4
-// if divisible by 100, must also be divisible by 400
+// SOLUTION: 
+    // const leapYears = function (year) {
+    //     return year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
+    //   };
 
-// yearVar%4 != 0 false
-// yearVar%4 == 0 && yearVar%100 == 0 && yearVar%400 != 0 false
+// DISCUSSION: 
+    // The second part of the logical comparsion operator is quite clever. 
+    // Ensures that any number less than 100, return true. (4, 16 etc).
+    // Additionally  if divisible by 100, (year%100 === 0 = True), must be divisible by 400. 
+    // All of this in one line. 
 
-
-// yearVar%100 != 0 true
-// yearVar%100 == 0 && yearVar%400 == 0 true
-
-
+    // In my attempt i was trying to write a return statement for all possible outcomes (!4, (4) (!100, 400), (100, 400) etc. 

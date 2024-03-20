@@ -18,7 +18,6 @@ const isPalindrome = function(half1, half2) {
     return output  
 }
 
-console.log(isPalindrome("hii", "iih"));
 
 
 // Do not edit below this line

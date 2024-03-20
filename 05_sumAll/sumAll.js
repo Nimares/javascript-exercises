@@ -25,7 +25,7 @@ const errorHandler = function(num1, num2) {
 
 const gauss = number => ((number*(number+1))/2); 
 
-console.log(sumAll(123, 1));
+console.log(sumAll(1, 4000));
 
 // 2 possible methods, either through iteration, or through modulated gauss formula
 
